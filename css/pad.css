@@ -1,0 +1,52 @@
+body #head-banner .swiper-wrapper .swiper-slide .inner-item h3 {
+  font: 100 1.8rem/2rem "Microsoft YaHei"; }
+body #head-banner .swiper-pagination .swiper-pagination-bullet {
+  width: 6px;
+  height: 6px; }
+body #head-banner #head #inhead {
+  width: 94%; }
+  body #head-banner #head #inhead #myname {
+    font: 100 2rem/3.6rem "FZXiHei"; }
+  body #head-banner #head #inhead #nav {
+    width: 76%; }
+    body #head-banner #head #inhead #nav span {
+      font: 100 1.2rem/2.6rem "Apple LiSung Light"; }
+body .out-slide1 .headtitle {
+  height: 4%; }
+  body .out-slide1 .headtitle h1 {
+    font: 100 2rem/3.2rem "Microsoft YaHei"; }
+body .out-slide1 #mylist #inmylist {
+  height: 90%; }
+  body .out-slide1 #mylist #inmylist div h2 {
+    font: 800 1.8rem/2.4rem "MingLiU"; }
+  body .out-slide1 #mylist #inmylist div p {
+    font: 100 1.6rem/1.9rem "NSimSun"; }
+body .out-slide1 #mylist #contact {
+  height: 10%; }
+  body .out-slide1 #mylist #contact .contactme {
+    width: 16%;
+    height: 50%; }
+body .out-slide2 article p {
+  font: 100 1.4rem/1.6rem "Microsoft YaHei"; }
+body .out-slide2 .headtitle {
+  height: 5%; }
+  body .out-slide2 .headtitle h1 {
+    font: 100 2rem/3rem "Microsoft YaHei"; }
+body .out-slide3 .headtitle {
+  height: 8%; }
+  body .out-slide3 .headtitle h1 {
+    font: 100 2rem/3.2rem "Microsoft YaHei"; }
+body .out-slide3 .case a {
+  height: 28%; }
+body .out-slide3 #footer {
+  height: 7%; }
+  body .out-slide3 #footer div {
+    width: 33%; }
+    body .out-slide3 #footer div h2 {
+      font: 100 1.2rem/1rem "Microsoft YaHei"; }
+    body .out-slide3 #footer div p {
+      font: 100 1.2rem/2rem "NSimSun"; }
+      body .out-slide3 #footer div p span {
+        font: 100 1.4rem/3rem "iconfont"; }
+
+/*# sourceMappingURL=pad.css.map */

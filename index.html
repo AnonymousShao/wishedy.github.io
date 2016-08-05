@@ -1,3 +1,406 @@
-hello world!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/swiper-3.3.1.min.css"/>
+    <link rel="stylesheet" href="css/animate.min.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <!--此样式的目的是为了改变手机端的响应布局-->
+    <link rel="stylesheet" href="css/phoneandpad.css" type="text/css" media="screen and (max-width:769px)"/>
+    <!--适配iPhone4 5-->
+    <link rel="stylesheet" href="css/smallest.css" type="text/css" media="screen and (max-width:360px) and (orientation:portrait)"/>
+    <!--适配iPhone6-->
+    <link rel="stylesheet" href="css/medium.css" type="text/css" media="screen and (min-width:361px) and (max-width:599px) and (orientation:portrait)"/>
+    <!--适配pad-->
+    <link rel="stylesheet" href="css/pad.css" type="text/css" media="screen and (min-width:600px) and (max-width:768px) and (orientation:portrait)"/>
+    <!--横屏的整体布局-->
+    <link rel="stylesheet" href="css/landscape.css" type="text/css" media="screen and (orientation:landscape) and (max-width:736px)" />
+    <!--适配较大手机的横屏-->
+    <link rel="stylesheet" href="css/landscapemedium.css" type="text/css" media="screen and (min-width:481px) and (max-width:736px) and (orientation:landscape)" />
+    <!--适配中等屏幕电脑-->
+    <link rel="stylesheet" href="css/index.css" type="text/css" media="screen and (min-width:737px) and (max-width:959px)"/>
+    <!--适配中等偏上屏幕电脑-->
+    <link rel="stylesheet" href="css/mediumcom.css" type="text/css" media="screen and (min-width:960px) and (max-width:1279px)"/>
+    <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/swiper-3.3.1.jquery.min.js"></script>
+    <script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <title>firefly</title>
+</head>
+<body>
+<section id="out-container">
+    <div class="swiper-wrapper" id="out-wrapper">
+        <section id="head-banner" class="swiper-slide out-slide">
+            <section  class="swiper-container">
+                <div class="swiper-wrapper">
+                    <header id="head">
+                        <div id="inhead">
+                            <h3 id="myname">Firefly</h3>
+                            <nav id="nav" class="navlist">
+                            </nav>
+                        </div>
 
-wishedy
+                    </header>
+                    <div class="swiper-slide inner-silede1">
+                        <section class="inner-item">
+                            <h3 class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
+                                <span>Come on with me</span>
+                                <span>Make beautiful</span>
+                            </h3>
+                            <a href="#" class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.5s" swiper-animate-delay="0.3s"><img src="images/pic10.jpg" alt="banner"/></a>
+                        </section>
+                    </div>
+                    <div class="swiper-slide inner-silede2">
+                        <section class="inner-item">
+                            <h3 class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
+                                <span>Come on with me</span>
+                                <span>Make beautiful</span>
+                            </h3>
+                            <a href="#" class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.5s" swiper-animate-delay="0s"><img src="images/pic10.jpg" alt="banner"/></a>
+                        </section>
+                    </div>
+                    <div class="swiper-slide inner-silede3">
+                        <section class="inner-item">
+                            <h3 class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
+                                <span>Come on with me</span>
+                                <span>Make beautiful</span>
+                            </h3>
+                            <a href="#" class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.5s" swiper-animate-delay="0s"><img src="images/pic10.jpg" alt="banner"/></a>
+                        </section>
+                    </div>
+                    <div class="swiper-slide inner-silede4">
+                        <section class="inner-item">
+                            <h3 class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
+                                <span>Come on with me</span>
+                                <span>Make beautiful</span>
+                            </h3>
+                            <a href="#" class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.5s" swiper-animate-delay="0s"><img src="images/pic10.jpg" alt="banner"/></a>
+                        </section>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </section>
+        </section>
+
+        <section class="swiper-slide out-slide1 out-slide">
+            <header id="about-me" class="headtitle">
+                <h1>
+                    About Me
+                </h1>
+            </header>
+            <section id="mylist">
+                <div id="inmylist">
+                    <div>
+                        <h2>个人·简介</h2>
+                        <p>
+                            我是一个正直忠诚、勤奋求实的人，会不断追求人格的自我完善；明显的特点是乐观自信、温和开朗、稳重宽厚，因此，我人际关系和谐，适应环境能力较强。爱好电脑、科普知识，喜欢钻研，正因为这些增强了我的实干精神，习惯事情或问题及早解决。
+                        </p>
+                    </div>
+                    <div>
+                        <h2>性格·爱好</h2>
+                        <p>
+                            我是一个正直忠诚、勤奋求实的人，会不断追求人格的自我完善；明显的特点是乐观自信、温和开朗、稳重宽厚，因此，我人际关系和谐，适应环境能力较强。爱好电脑、科普知识，喜欢钻研，正因为这些增强了我的实干精神，习惯事情或问题及早解决。
+                        </p>
+                    </div>
+                    <div>
+                        <h2>职业·追求</h2>
+                        <p>
+                            我是一个正直忠诚、勤奋求实的人，会不断追求人格的自我完善；明显的特点是乐观自信、温和开朗、稳重宽厚，因此，我人际关系和谐，适应环境能力较强。爱好电脑、科普知识，喜欢钻研，正因为这些增强了我的实干精神，习惯事情或问题及早解决。
+                        </p>
+                    </div>
+                </div>
+                <div id="contact">
+                    <span class="contactme">Contact</span>
+                </div>
+            </section>
+            <div id="myskill">
+                <h2 class="aboutskill">My Skill</h2>
+                <div class="skill-swiper-container">
+                    <div class="swiper-wrapper">
+                        <section class="swiper-slide skilllist">
+                            <div>
+                                <h2>Html</h2>
+                                <p>
+                                    <span  class="animate-active"   set-tran="scaleX(1.5)" set-during-time="1000"  set-func="ease" set-delay="0"></span>
+                                </p>
+                                <h3>
+                                    <em>6</em>
+                                    <em>0</em>
+                                    <em>%</em>
+                                </h3>
+                            </div>
+                            <div>
+                                <h2>Css</h2>
+                                <p>
+                                    <span   class="animate-active"   set-tran="scaleX(1.0)" set-during-time="1000"  set-func="ease" set-delay="0"></span>
+                                </p>
+                                <h3>
+                                    <em>6</em>
+                                    <em>0</em>
+                                    <em>%</em>
+                                </h3>
+                            </div>
+                            <div>
+                                <h2>JavaScript</h2>
+                                <p>
+                                    <span   class="animate-active"   set-tran="scaleX(1.2)" set-during-time="1000"  set-func="ease" set-delay="0"></span>
+                                </p>
+                                <h3>
+                                    <em>6</em>
+                                    <em>0</em>
+                                    <em>%</em>
+                                </h3>
+                            </div>
+                            <div>
+                                <h2>Jquery</h2>
+                                <p>
+                                    <span   class="animate-active"   set-tran="scaleX(1.1)" set-during-time="1000"  set-func="ease" set-delay="0"></span>
+                                </p>
+                                <h3>
+                                    <em>6</em>
+                                    <em>0</em>
+                                    <em>%</em>
+                                </h3>
+                            </div>
+                        </section>
+                        <section class="swiper-slide skilllist">
+                            <div>
+                                <h2>Ajax</h2>
+                                <p>
+                                    <span  class="animate-active"   set-tran="scaleX(1.5)" set-during-time="1000"  set-func="ease" set-delay="0"></span>
+                                </p>
+                                <h3>
+                                    <em>6</em>
+                                    <em>0</em>
+                                    <em>%</em>
+                                </h3>
+                            </div>
+                            <div>
+                                <h2>ANGULARJS</h2>
+                                <p>
+                                    <span   class="animate-active"   set-tran="scaleX(1.0)" set-during-time="1000"  set-func="ease" set-delay="0"></span>
+                                </p>
+                                <h3>
+                                    <em>6</em>
+                                    <em>0</em>
+                                    <em>%</em>
+                                </h3>
+                            </div>
+                            <div>
+                                <h2>BOOTSTRAP</h2>
+                                <p>
+                                    <span   class="animate-active"   set-tran="scaleX(1.2)" set-during-time="1000"  set-func="ease" set-delay="0"></span>
+                                </p>
+                                <h3>
+                                    <em>6</em>
+                                    <em>0</em>
+                                    <em>%</em>
+                                </h3>
+                            </div>
+                            <div>
+                                <h2>H5+C3</h2>
+                                <p>
+                                    <span   class="animate-active"   set-tran="scaleX(1.1)" set-during-time="1000"  set-func="ease" set-delay="0"></span>
+                                </p>
+                                <h3>
+                                    <em>6</em>
+                                    <em>0</em>
+                                    <em>%</em>
+                                </h3>
+                            </div>
+                        </section>
+                        <section class="swiper-slide skilllist">
+                            <div>
+                                <h2>Html</h2>
+                                <p>
+                                    <span  class="animate-active"   set-tran="scaleX(1.5)" set-during-time="1000"  set-func="ease" set-delay="0"></span>
+                                </p>
+                                <h3>
+                                    <em>6</em>
+                                    <em>0</em>
+                                    <em>%</em>
+                                </h3>
+                            </div>
+                            <div>
+                                <h2>Css</h2>
+                                <p>
+                                    <span   class="animate-active"   set-tran="scaleX(1.0)" set-during-time="1000"  set-func="ease" set-delay="0"></span>
+                                </p>
+                                <h3>
+                                    <em>6</em>
+                                    <em>0</em>
+                                    <em>%</em>
+                                </h3>
+                            </div>
+                            <div>
+                                <h2>JavaScript</h2>
+                                <p>
+                                    <span   class="animate-active"   set-tran="scaleX(1.2)" set-during-time="1000"  set-func="ease" set-delay="0"></span>
+                                </p>
+                                <h3>
+                                    <em>6</em>
+                                    <em>0</em>
+                                    <em>%</em>
+                                </h3>
+                            </div>
+                            <div>
+                                <h2>Branding</h2>
+                                <p>
+                                    <span   class="animate-active"   set-tran="scaleX(1.1)" set-during-time="1000"  set-func="ease" set-delay="0"></span>
+                                </p>
+                                <h3>
+                                    <em>6</em>
+                                    <em>0</em>
+                                    <em>%</em>
+                                </h3>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="swiper-slide out-slide2 out-slide">
+            <header  class="headtitle">
+                <h1>
+                    H5 Demo
+                </h1>
+            </header>
+            <article>
+                <p>No one lights a lamp in order to hide it behind the door: the purpose of light is to create more light, to open people’s eyes, to reveal the marvels around.</p>
+            </article>
+            <section>
+                <div class="animate-active" set-tran="translateX(0%)" set-during-time="2500" set-animate="fadeIn 1500ms linear 0s 1" set-func="ease" set-delay="0">
+                    <a href="#">
+                        <em></em>
+                        <em></em>
+                        <i>致青春</i>
+                        <i>预览</i>
+                        <img src="images/pic10.jpg" alt="h5demo">
+                    </a>
+                    <a href="#">
+                        <em></em>
+                        <em></em>
+                        <i>致青春</i>
+                        <i>预览</i>
+                        <img src="images/pic10.jpg" alt="h5demo">
+                    </a>
+                    <a href="#">
+                        <em></em>
+                        <em></em>
+                        <i>致青春</i>
+                        <i>预览</i>
+                        <img src="images/pic10.jpg" alt="h5demo">
+                    </a>
+                    <a href="#">
+                        <em></em>
+                        <em></em>
+                        <i>致青春</i>
+                        <i>预览</i>
+                        <img src="images/pic10.jpg" alt="h5demo">
+                    </a>
+
+                </div>
+                <div class="animate-active" set-tran="translateX(0%)" set-during-time="1500" set-animate="fadeIn 1s linear 0s 1" set-func="ease" set-delay="0">
+                    <a href="#">
+                        <em></em>
+                        <em></em>
+                        <i>致青春</i>
+                        <i>预览</i>
+                        <img src="images/pic10.jpg" alt="h5demo">
+                    </a>
+                    <a href="#">
+                        <em></em>
+                        <em></em>
+                        <i>致青春</i>
+                        <i>预览</i>
+                        <img src="images/pic10.jpg" alt="h5demo">
+                    </a>
+                    <a href="#">
+                        <em></em>
+                        <em></em>
+                        <i>致青春</i>
+                        <i>预览</i>
+                        <img src="images/pic10.jpg" alt="h5demo">
+                    </a>
+                    <a href="#">
+                        <em></em>
+                        <em></em>
+                        <i>致青春</i>
+                        <i>预览</i>
+                        <img src="images/pic10.jpg" alt="h5demo">
+                    </a>
+                </div>
+            </section>
+            <footer>
+                <p>以上场景页面均为兴趣原创，谢绝商业行为，欢迎浏览交流</p>
+            </footer>
+        </section>
+
+        <section class="swiper-slide out-slide3 out-slide">
+            <header  class="headtitle">
+                <h1>
+                    PORTFOLIO
+                </h1>
+            </header>
+            <section class="case animate-active"   set-tran="scale(1)" set-during-time="2500" set-animate="zoomIn 1500ms linear 0s 1" set-func="ease" set-delay="0">
+                <a href="#">
+                    <img src="images/pic10.jpg" alt="case"/>
+                </a>
+                <a href="#">
+                    <img src="images/pic10.jpg" alt="case"/>
+                </a>
+                <a href="#">
+                    <img src="images/pic10.jpg" alt="case"/>
+                </a>
+                <a href="#">
+                    <img src="images/pic10.jpg" alt="case"/>
+                </a>
+                <a href="#">
+                    <img src="images/pic10.jpg" alt="case"/>
+                </a>
+                <a href="#">
+                    <img src="images/pic10.jpg" alt="case"/>
+                </a>
+                <a href="#">
+                    <img src="images/pic10.jpg" alt="case"/>
+                </a>
+                <a href="#">
+                    <img src="images/pic10.jpg" alt="case"/>
+                </a>
+                <a href="#">
+                    <img src="images/pic10.jpg" alt="case"/>
+                </a>
+            </section>
+            <footer id="footer">
+                <div class="animate-active" set-animate="bounce 1s linear 0s 1">
+                    <h2>TelePhone</h2>
+                    <p><span class="iconfont phone">:</span>18210589196</p>
+                </div>
+                <div  class="animate-active" set-animate="bounce 1s linear 1000ms 1">
+                    <h2>E-mail</h2>
+                    <p><span class="iconfont email">:</span>zhfirefly@yahoo.com</p>
+                </div>
+                <div  class="animate-active" set-animate="bounce 1s linear 2000ms 1">
+                    <h2>QQ</h2>
+                    <p><span class="iconfont qq">:</span>2021973232</p>
+                </div>
+            </footer>
+        </section>
+    </div>
+    <div class="swiper-scrollbar"></div>
+    <div id="navcontainer">
+        <div class="navlist" id="sidebarnav">
+        </div>
+        <em>
+            导航
+        </em>
+    </div>
+
+</section>
+
+</body>
+</html>

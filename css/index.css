@@ -1,0 +1,527 @@
+@charset "UTF-8";
+/*鏍峰紡閲嶇疆*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+  margin: 0;
+  padding: 0; }
+
+fieldset, img {
+  border: none; }
+
+img {
+  display: block; }
+
+address, caption, cite, code, dfn, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ul, ol, li {
+  list-style: none; }
+
+a {
+  color: #666;
+  text-decoration: none; }
+
+.clearboth {
+  clear: both;
+  height: 0;
+  overflow: hidden; }
+
+/*椤甸潰瀛椾綋鍝嶅簲*/
+html {
+  font-size: 62.5%;
+  /* 10梅16=62.5% */ }
+
+@media only screen and (min-width: 481px) {
+  html {
+    font-size: 94% !important;
+    /* 15.04梅16=94% */ } }
+@media only screen and (min-width: 561px) {
+  html {
+    font-size: 109% !important;
+    /* 17.44梅16=109% */ } }
+@media only screen and (min-width: 641px) {
+  html {
+    font-size: 125% !important;
+    /* 20梅16=125% */ } }
+/*鏍峰紡閲嶇疆*/
+@font-face {
+  font-family: 'iconfont';
+  src: url("../font/iconfont.eot");
+  /* IE9*/
+  src: url("../font/iconfont.eot?#iefix") format("embedded-opentype"), url("../font/iconfont.woff") format("woff"), url("../font/iconfont.ttf") format("truetype"), url("../font/iconfont.svg#iconfont") format("svg");
+  /* iOS 4.1- */ }
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale; }
+
+.phone:before {
+  content: "\e679"; }
+
+.email:before {
+  content: "\e6af"; }
+
+.qq:before {
+  content: "\e617"; }
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  width: 100%;
+  height: auto; }
+  body #out-container {
+    cursor: pointer;
+    width: 100vw;
+    height: 100vh;
+    position: relative; }
+    body #out-container #navcontainer {
+      position: fixed;
+      width: 6%;
+      height: 8rem;
+      background: #75c8b9;
+      left: -6%;
+      top: 40%;
+      z-index: 99;
+      transition: all 1s ease; }
+      body #out-container #navcontainer em {
+        position: absolute;
+        display: block;
+        width: 36%;
+        height: 50%;
+        left: 100%;
+        top: 20%;
+        text-align: center;
+        background: #75c8b9;
+        color: #fff;
+        font: 100 0.8rem/1.8rem "Microsoft YaHei"; }
+      body #out-container #navcontainer #sidebarnav {
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        body #out-container #navcontainer #sidebarnav span {
+          width: 86%;
+          margin: 0 auto;
+          border-bottom: 1px  dashed #b94726;
+          height: 19%;
+          text-align: center;
+          font: 100 0.3rem/1.3rem "Microsoft YaHei"; }
+    body #out-container #navcontainer:hover {
+      transform: translateX(100%); }
+    body #out-container #out-wrapper {
+      width: 100%;
+      height: 100%; }
+    body #out-container .swiper-scrollbar {
+      width: 10px; }
+  body #head-banner {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    body #head-banner .swiper-container {
+      width: 100%;
+      height: 100%; }
+    body #head-banner .swiper-wrapper {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0; }
+      body #head-banner .swiper-wrapper .swiper-slide {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-end; }
+        body #head-banner .swiper-wrapper .swiper-slide .inner-item {
+          width: 68%;
+          height: 80%;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around; }
+          body #head-banner .swiper-wrapper .swiper-slide .inner-item h3 {
+            width: 80%;
+            margin: 0 auto;
+            height: 30%;
+            color: #fff;
+            font: 100 3rem/4rem "Microsoft YaHei";
+            font-weight: normal;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around; }
+          body #head-banner .swiper-wrapper .swiper-slide .inner-item a {
+            height: 70%;
+            width: 68%;
+            margin: 0 auto; }
+            body #head-banner .swiper-wrapper .swiper-slide .inner-item a img {
+              max-width: 100%;
+              height: auto; }
+      body #head-banner .swiper-wrapper .inner-silede1 {
+        background: #4f85bb; }
+      body #head-banner .swiper-wrapper .inner-silede2 {
+        background: #75c8b9; }
+      body #head-banner .swiper-wrapper .inner-silede3 {
+        background: #e76b5c; }
+      body #head-banner .swiper-wrapper .inner-silede4 {
+        background: #8f0222; }
+    body #head-banner .swiper-pagination {
+      bottom: 0; }
+      body #head-banner .swiper-pagination .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px; }
+      body #head-banner .swiper-pagination .swiper-pagination-bullet-active {
+        background: #fff; }
+    body #head-banner #head {
+      width: 100%;
+      height: 14%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      box-sizing: border-box; }
+      body #head-banner #head #inhead {
+        width: 99%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; }
+        body #head-banner #head #inhead #myname {
+          width: auto;
+          font: 100 2rem/4rem "FZXiHei";
+          color: #fff; }
+        body #head-banner #head #inhead #nav {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          width: 60%;
+          position: relative;
+          align-items: center;
+          padding: 0 2%; }
+          body #head-banner #head #inhead #nav span {
+            display: block;
+            height: auto;
+            opacity: 1;
+            width: auto !important;
+            font: 100 1rem/4rem "Apple LiSung Light";
+            color: #fff;
+            box-sizing: border-box;
+            background: none;
+            border-bottom: 3px solid transparent;
+            font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+            transition: all 400ms ease;
+            cursor: pointer; }
+          body #head-banner #head #inhead #nav span:hover {
+            border-bottom: 3px solid #fff; }
+  body .headtitle {
+    width: 100%;
+    height: 10%;
+    background: #75c8b9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; }
+    body .headtitle h1 {
+      box-sizing: border-box;
+      width: 90%;
+      height: 82%;
+      border-top: 1px dashed #519855;
+      border-bottom: 1px dashed #559a5c;
+      text-align: center;
+      font: 100 2rem/4rem "Microsoft YaHei";
+      color: #fff; }
+  body .out-slide1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    body .out-slide1 #mylist {
+      width: 100%;
+      height: 60%;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      body .out-slide1 #mylist #inmylist {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 72%;
+        width: 100%; }
+        body .out-slide1 #mylist #inmylist div {
+          width: 30%;
+          height: 70%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          text-align: left; }
+          body .out-slide1 #mylist #inmylist div h2 {
+            width: 100%;
+            height: 16%;
+            font: 100 1.5rem/3rem "MingLiU";
+            transition: all 500ms ease; }
+          body .out-slide1 #mylist #inmylist div p {
+            width: 100%;
+            height: 82%;
+            font: 100 1rem/1.6rem "NSimSun"; }
+        body .out-slide1 #mylist #inmylist div:hover h2 {
+          color: #75c8b9; }
+      body .out-slide1 #mylist #contact {
+        width: 100%;
+        height: 28%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center; }
+        body .out-slide1 #mylist #contact .contactme {
+          width: 12%;
+          height: 28%;
+          background: #485460;
+          border-radius: 0.3rem;
+          text-align: center;
+          color: #fff;
+          font: 100 1.3rem/2rem "Microsoft YaHei";
+          cursor: pointer;
+          transition: all 800ms ease; }
+        body .out-slide1 #mylist #contact .contactme:hover {
+          background: #313843; }
+    body .out-slide1 #myskill {
+      width: 100%;
+      height: 40%;
+      background: url(../images/skill-bg.jpg) no-repeat center center;
+      display: flex;
+      background-size: cover;
+      flex-direction: column;
+      justify-content: space-around; }
+      body .out-slide1 #myskill .aboutskill {
+        width: 100%;
+        height: 35%;
+        text-align: center;
+        font: 100 2rem/4rem "Microsoft YaHei";
+        color: #fff; }
+      body .out-slide1 #myskill .skill-swiper-container {
+        width: 100%;
+        height: 65%; }
+        body .out-slide1 #myskill .skill-swiper-container .swiper-wrapper {
+          width: 100%;
+          height: 100%; }
+          body .out-slide1 #myskill .skill-swiper-container .swiper-wrapper .skilllist {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start; }
+            body .out-slide1 #myskill .skill-swiper-container .swiper-wrapper .skilllist div {
+              width: 23%;
+              height: 88%;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              align-items: flex-start; }
+              body .out-slide1 #myskill .skill-swiper-container .swiper-wrapper .skilllist div h2 {
+                text-align: center;
+                font: 100 1.4rem/2rem "Microsoft YaHei";
+                color: #fff;
+                height: 20%; }
+              body .out-slide1 #myskill .skill-swiper-container .swiper-wrapper .skilllist div p {
+                width: 100%;
+                height: 10%;
+                background: #fff;
+                border-radius: 1rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                vertical-align: middle; }
+                body .out-slide1 #myskill .skill-swiper-container .swiper-wrapper .skilllist div p span {
+                  width: 60%;
+                  height: 96%;
+                  transform-origin: 0 50%;
+                  transform: scaleX(0.5);
+                  border-radius: 1rem 0 0 1rem;
+                  background: #75c8b9; }
+              body .out-slide1 #myskill .skill-swiper-container .swiper-wrapper .skilllist div h3 {
+                width: 80%;
+                height: 58%;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around; }
+                body .out-slide1 #myskill .skill-swiper-container .swiper-wrapper .skilllist div h3 em {
+                  width: 32%;
+                  height: 100%;
+                  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9fcf7+2,e6e5e6+47,f5f9f0+84 */
+                  background: #f9fcf7;
+                  /* Old browsers */
+                  background: -moz-linear-gradient(top, #f9fcf7 2%, #e6e5e6 47%, #f5f9f0 84%);
+                  /* FF3.6-15 */
+                  background: -webkit-linear-gradient(top, #f9fcf7 2%, #e6e5e6 47%, #f5f9f0 84%);
+                  /* Chrome10-25,Safari5.1-6 */
+                  background: linear-gradient(to bottom, #f9fcf7 2%, #e6e5e6 47%, #f5f9f0 84%);
+                  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9fcf7', endColorstr='#f5f9f0',GradientType=0 );
+                  /* IE6-9 */
+                  font-style: normal;
+                  font: 100 3rem/5rem "Microsoft YaHei";
+                  text-align: center;
+                  color: #75c8b9; }
+        body .out-slide1 #myskill .skill-swiper-container .swiper-pagination-bullet-active {
+          background: #fff; }
+  body .out-slide2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; }
+    body .out-slide2 article {
+      width: 80%;
+      height: 20%;
+      text-align: center;
+      margin: 0 auto; }
+      body .out-slide2 article p {
+        width: 60%;
+        margin: 0 auto;
+        height: 100%;
+        text-align: center;
+        font: 100 1.2rem/2rem "Microsoft YaHei";
+        color: #000;
+        transition: all 600ms ease; }
+      body .out-slide2 article p:hover {
+        color: #75c8b9; }
+    body .out-slide2 section {
+      width: 80%;
+      height: 58%;
+      margin: 0 auto;
+      box-sizing: content-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      body .out-slide2 section div:nth-of-type(1) {
+        transform: translateX(-120%); }
+      body .out-slide2 section div:nth-of-type(2) {
+        transform: translateX(120%); }
+      body .out-slide2 section div {
+        width: 100%;
+        height: 46%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around; }
+      body .out-slide2 section a {
+        width: 22%;
+        height: 100%;
+        position: relative;
+        overflow: hidden; }
+        body .out-slide2 section a em {
+          display: block;
+          position: absolute;
+          top: 0;
+          width: 50%;
+          height: 100%;
+          background: #333;
+          opacity: .4;
+          filter: alpha(opacity=40);
+          transition: all 600ms ease; }
+        body .out-slide2 section a i {
+          position: absolute;
+          width: 48%;
+          height: 15%;
+          background: #75c8b9;
+          z-index: 3;
+          color: #fff;
+          font: 100 1rem/2rem "NSimSun";
+          top: -20%;
+          left: 28%;
+          border-radius: 0.3rem;
+          text-align: center;
+          display: block;
+          transition: all 600ms ease; }
+        body .out-slide2 section a i:nth-of-type(1) {
+          background: none;
+          color: #fff; }
+        body .out-slide2 section a i:nth-of-type(2) {
+          top: 100%; }
+        body .out-slide2 section a em:nth-of-type(1) {
+          left: -50%; }
+        body .out-slide2 section a em:nth-of-type(2) {
+          right: -50%; }
+        body .out-slide2 section a img {
+          width: 100%;
+          height: 100%; }
+      body .out-slide2 section a:hover em:nth-of-type(1) {
+        transform: translateX(100%); }
+      body .out-slide2 section a:hover em:nth-of-type(2) {
+        transform: translateX(-100%); }
+      body .out-slide2 section a:hover i:nth-of-type(1) {
+        transform: translateY(258%); }
+      body .out-slide2 section a:hover i:nth-of-type(2) {
+        transform: translateY(-268%); }
+    body .out-slide2 footer {
+      width: 100%;
+      height: 10%;
+      margin: 0 auto;
+      background: #2a3448 url(../images/map.png) no-repeat center center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      body .out-slide2 footer p {
+        width: 60%;
+        height: 40%;
+        color: #7A869E;
+        text-align: center;
+        font: 100 0.8rem/2rem "	NSimSun"; }
+  body .out-slide3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    body .out-slide3 .case {
+      width: 88%;
+      height: 65%;
+      margin: 1% auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      box-sizing: content-box;
+      transform: scale(0); }
+      body .out-slide3 .case a {
+        height: 33.3%;
+        width: 33%; }
+        body .out-slide3 .case a img {
+          width: 100%;
+          height: 100%; }
+    body .out-slide3 #footer {
+      width: 100%;
+      height: 23%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      background: #2a3448 url(../images/map.png) no-repeat center center;
+      background-size: cover; }
+      body .out-slide3 #footer div {
+        width: 31%;
+        height: 86%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around; }
+        body .out-slide3 #footer div h2 {
+          height: 20%;
+          margin: 0 auto;
+          text-align: center;
+          color: #FFD440;
+          font: 100 2rem/4rem "Microsoft YaHei"; }
+        body .out-slide3 #footer div p {
+          height: 78%;
+          margin: 0 auto;
+          text-align: center;
+          color: #7A869E;
+          font: 100 1.4rem/4rem "Microsoft YaHei"; }
+          body .out-slide3 #footer div p span {
+            font: 100 2.6rem/4rem "Microsoft YaHei"; }
+
+/*# sourceMappingURL=index.css.map */
