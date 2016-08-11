@@ -92,8 +92,6 @@ body .out-slide3 {
       font: 100 1.8rem/2.3rem "Microsoft YaHei"; }
   body .out-slide3 .case {
     height: 82%; }
-    body .out-slide3 .case a {
-      height: 28%; }
   body .out-slide3 #footer {
     justify-content: flex-start;
     height: 10%; }

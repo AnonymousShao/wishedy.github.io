@@ -88,8 +88,6 @@ body .out-slide3 {
   height: 160vh !important; }
   body .out-slide3 .case {
     height: 82%; }
-    body .out-slide3 .case a {
-      height: 28%; }
   body .out-slide3 #footer {
     justify-content: flex-start;
     height: 10%; }

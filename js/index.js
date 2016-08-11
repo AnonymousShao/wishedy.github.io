@@ -16,7 +16,70 @@ $(document).ready(function(){
             swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
         }/**/
 
-    })
+    });
+    var APP_ID = 'UxhULwvl8kpMusv1XP3EQ60b-gzGzoHsz';
+
+// 应用 Key，用来校验权限（Web 端可以配置安全域名来保护数据安全）
+    var APP_KEY = 'Qk2lIxE8nUMmAi4j6hJ0LgP2';
+
+// 初始化
+    AV.init({
+        appId: APP_ID,
+        appKey: APP_KEY
+    });
+    function saveData(saveStr){
+        var TestObject = AV.Object.extend('TestObject');
+        var testObject = new TestObject();
+        testObject.save({
+            testabc: saveStr,
+        }).then(function() {
+            $(".window").show(800);
+            $(".nopro").click(function(){
+                $(".window").hide(300);
+                $(".swiper-slide-active .inner-mess").each(function(i){
+                    $(this).val("");
+                });
+            });
+            $(".noque").click(function(){
+                $(".window").hide(300);
+                $(".swiper-slide-active .inner-mess").each(function(i){
+                    $(this).val("");
+                });
+            });
+        }).catch(function(err) {
+            alert('error:' + err);
+        });
+    }
+    $(".submit").click(function(){
+        var str = '';
+        $(".swiper-slide-active .inner-mess").each(function(){
+            str+= $(this).attr("placeholder")+$(this).val();
+
+        });
+        saveData(str);
+        });
+    console.log($(".out-slide2 .scan"))
+    function scan(){
+        var img = ["images/play1.png","images/play2.png","images/play3.png","images/play4.png","images/play5.png","images/play6.png"];
+        $(".out-slide2 .scan").each(function(i){
+            $(this).click(function(){
+                console.log(i)
+                console.log($(".canvas img"))
+                $(".canvas img").attr({
+                    "src":img[i]
+                });
+                $(".canvas").animate({
+                    "left":"60%",
+                },2000);
+                $(".picok").click(function(){
+                    $(".canvas").animate({
+                        "left":"100%",
+                    },1000);
+                })
+            })
+        });
+    }
+    scan();
     var skillSwiper = new Swiper(".skill-swiper-container",{
         autoplay: 3000,//可选选项，自动滑动
         pagination : '.swiper-pagination',
@@ -43,6 +106,8 @@ $(document).ready(function(){
         paginationElement : 'span',
         bulletClass : 'my-bullet',
         bulletActiveClass : 'my-bullet-active',
+        followFinger : true,
+        shortSwipes : true,
         paginationClickable: true,
         paginationBulletRender: function (index, className) {
             var navlist = ["Home","About Me","H5 Demo","PORTFOLIO"];
