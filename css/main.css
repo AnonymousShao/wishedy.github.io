@@ -11,6 +11,9 @@
     width:100%;
     height:100%;
 }
+.swiper-pagination-bullet-active{
+    background: #6c7b8d !important;
+}
 .my-text{
     top:60%;
     left:2%;

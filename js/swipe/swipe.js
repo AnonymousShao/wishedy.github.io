@@ -3,10 +3,10 @@
  */
 $(document).ready(function(){
     var mySwiper = new Swiper('.swiper-container', {
-        autoplay: 3000,//可选选项，自动滑动
+        autoplay: 4300,//可选选项，自动滑动
         pagination : '.swiper-pagination',
         loop : true,
-        speed:1000,
+        speed:1600,
         touchRatio :1,
         followFinger : true,
         shortSwipes : true,
@@ -21,7 +21,7 @@ $(document).ready(function(){
     var theSwiper = new Swiper('.inner-swiper-container', {
         autoplay: 3000,//可选选项，自动滑动
         loop : true,
-        speed:1000,
+        speed:2000,
         touchRatio :1,
         followFinger : true,
         shortSwipes : true,
