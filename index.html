@@ -1,394 +1,283 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-    <link rel="stylesheet" href="css/swiper-3.3.1.min.css"/>
-    <link rel="stylesheet" href="css/animate.min.css"/>
-    <link rel="stylesheet" href="css/index.css"/>
-    <!--此样式的目的是为了改变手机端的响应布局-->
-    <link rel="stylesheet" href="css/phoneandpad.css" type="text/css" media="screen and (max-width:769px)"/>
-    <!--适配iPhone4 5-->
-    <link rel="stylesheet" href="css/smallest.css" type="text/css" media="screen and (max-width:360px) and (orientation:portrait)"/>
-    <!--适配iPhone6-->
-    <link rel="stylesheet" href="css/medium.css" type="text/css" media="screen and (min-width:361px) and (max-width:599px) and (orientation:portrait)"/>
-    <!--适配pad-->
-    <link rel="stylesheet" href="css/pad.css" type="text/css" media="screen and (min-width:600px) and (max-width:768px) and (orientation:portrait)"/>
-    <!--横屏的整体布局-->
-    <link rel="stylesheet" href="css/landscape.css" type="text/css" media="screen and (orientation:landscape) and (max-width:736px)" />
-    <!--适配较大手机的横屏-->
-    <link rel="stylesheet" href="css/landscapemedium.css" type="text/css" media="screen and (min-width:481px) and (max-width:736px) and (orientation:landscape)" />
-    <!--适配中等屏幕电脑-->
-    <link rel="stylesheet" href="css/index.css" type="text/css" media="screen and (min-width:737px) and (max-width:959px)"/>
-    <!--适配中等偏上屏幕电脑-->
-    <link rel="stylesheet" href="css/mediumcom.css" type="text/css" media="screen and (min-width:960px) and (max-width:1279px)"/>
-    <title>firefly</title>
-</head>
-<body>
-<section id="out-container">
-    <div class="swiper-wrapper" id="out-wrapper">
-        <section id="head-banner" class="swiper-slide out-slide">
-            <section  class="swiper-container">
-                <div class="swiper-wrapper">
-                    <header id="head">
-                        <div id="inhead">
-                            <h3 id="myname">Firefly</h3>
-                            <nav id="nav" class="navlist">
-                            </nav>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>张恒-web前端-个人网站</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+        <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    
+        <div class="responsive-header visible-xs visible-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="top-section">
+                            <div class="profile-image">
+                                <img src="img/profile.jpg" alt="Volton">
+                            </div>
+                            <div class="profile-content">
+                                <h3 class="profile-title"></h3>
+                                <p class="profile-description">张恒 前端工程师</p>
+                            </div>
                         </div>
-
-                    </header>
-                    <div class="swiper-slide inner-silede1">
-                        <section class="inner-item">
-                            <h3 class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
-                                <span>Do one thing at a time</span>
-                                <span>And do well</span>
-                            </h3>
-                            <a href="#" class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.5s" swiper-animate-delay="0.3s"><img src="images/montain.jpg" alt="banner"/></a>
-                        </section>
                     </div>
-                    <div class="swiper-slide inner-silede2">
-                        <section class="inner-item">
-                            <h3 class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
-                                <span>Action speak louder</span>
-                                <span>Than words</span>
-                            </h3>
-                            <a href="#" class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.5s" swiper-animate-delay="0s"><img src="images/star.jpg" alt="banner"/></a>
-                        </section>
+                </div>
+                <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
+                <div class="main-navigation responsive-menu">
+                    <ul class="navigation">
+                        <li><a href="#top"><i class="fa fa-home"></i>Home</a></li>
+                        <li><a href="#about"><i class="fa fa-user"></i>About Me</a></li>
+                        <li><a href="#projects"><i class="fa fa-newspaper-o"></i>My Gallery</a></li>
+                        <li><a href="#contact"><i class="fa fa-envelope"></i>Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+		
+        <!-- SIDEBAR -->
+        <div class="sidebar-menu hidden-xs hidden-sm">
+            <div class="top-section">
+                <div class="profile-image">
+                    <img src="img/profile.jpg" alt="Volton">
+                </div>
+                <h3 class="profile-title">张恒</h3>
+                <p class="profile-description">Web前端工程师</p>
+            </div> <!-- top-section -->
+            <div class="main-navigation">
+                <ul class="navigation">
+                    <li><a href="#top"><i class="fa fa-globe"></i>Welcome</a></li>
+                    <li><a href="#about"><i class="fa fa-pencil"></i>About Me</a></li>
+                    <li><a href="#projects"><i class="fa fa-paperclip"></i>My Projects</a></li>
+                    <li><a href="#contact"><i class="fa fa-link"></i>Contact Me</a></li>
+                </ul>
+            </div> <!-- .main-navigation -->
+            <div class="social-icons">
+                <ul>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                </ul>
+            </div> <!-- .social-icons -->
+        </div> <!-- .sidebar-menu -->
+        
+		<!--<div class="copyrights">Collect from <a href="http://www.cssmoban.com/" >免费模板</a></div>-->
+        	<!--<div class="swiper-container">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide">slider1</div>
+    <div class="swiper-slide">slider2</div>
+    <div class="swiper-slide">slider3</div>
+  </div>
+</div>-->
+        <div class="banner-bg" id="top">
+            <!--<div class="banner-overlay"></div>-->
+            <div class="swiper-container banner-overlay">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background:url(img/jobs.jpg) no-repeat 0 0;background-size: cover;">
+                        <div class="welcome-text my-text">
+                            <h2  class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.5s" swiper-animate-delay="0.1s">Steve Jobs | Says</h2>
+                            <h5  class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.5s" swiper-animate-delay="0.1s">Stay Hungry,Stay Foolish.IT是一个永无止境的学海，时刻用这句话来警醒自己！</h5>
+                        </div>
                     </div>
-                    <div class="swiper-slide inner-silede3">
-                        <section class="inner-item">
-                            <h3 class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
-                                <span>Stay Hungry</span>
-                                <span>Stay Folish</span>
-                            </h3>
-                            <a href="#" class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.5s" swiper-animate-delay="0s"><img src="images/jobs.jpg" alt="banner"/></a>
-                        </section>
+                    <div class="swiper-slide" style="background:url(img/way.jpg) no-repeat 0 0;background-size: cover;">
+                        <div class="welcome-text my-text">
+                            <h2  class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.5s" swiper-animate-delay="0.1s">行 ！ 胜于言</h2>
+                            <h5  class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.5s" swiper-animate-delay="0.1s">Actions speak louder than words.纸上得来终觉浅，绝知此事要躬行！</h5>
+                        </div>
                     </div>
-                    <div class="swiper-slide inner-silede4">
-                        <section class="inner-item">
-                            <h3 class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.5s" swiper-animate-delay="0s">
-                                <span>精诚所至</span>
-                                <span>金石为开</span>
-                            </h3>
-                            <a href="#" class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.5s" swiper-animate-delay="0s"><img src="images/way.jpg" alt="banner"/></a>
-                        </section>
+                    <div class="swiper-slide" style="background:url(img/montain.jpg) no-repeat 0 0;background-size: cover;">
+                        <div class="welcome-text my-text">
+                            <h2  class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.5s" swiper-animate-delay="0.1s">《阿甘正传》</h2>
+                            <h5  class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.5s" swiper-animate-delay="0.1s">Do one thing at a time ,and do well .用一颗单纯的心，做一件单纯的事！</h5>
+                        </div>
                     </div>
                 </div>
                 <div class="swiper-pagination"></div>
-            </section>
-        </section>
-
-        <section class="swiper-slide out-slide1 out-slide">
-            <header id="about-me" class="headtitle">
-                <h1>
-                    About Me
-                </h1>
-            </header>
-            <section id="mylist">
-                <div id="inmylist">
-                    <div>
-                        <h2>个人·简介</h2>
-                        <p>
-                            我是一个正直忠诚、勤奋求实的人，会不断追求人格的自我完善；明显的特点是乐观自信、温和开朗、稳重宽厚，因此，我人际关系和谐，适应环境能力较强。爱好电脑、科普知识，喜欢钻研，正因为这些增强了我的实干精神，习惯事情或问题及早解决。
-                        </p>
-                    </div>
-                    <div>
-                        <h2>自我评价</h2>
-                        <p>精通HTML/HTML5/CSS/CSS3网页布局与样式，熟悉W3C标准;熟悉Js、jQuery、Zepto 等JS框架,熟悉业界常用的框架Bootstrap、AngularJS，了解PHP;熟练运用Photoshop、Dreamweaver 、WebStorm、FireWorks等网页设计制作软件;熟悉浏览器兼容性解决方案;良好的编码习惯、沟通协作能力;
-
-                        </p>
-                    </div>
-                    <div>
-                        <h2>兴趣爱好</h2>
-                        <p>
-                            业余时间喜欢看书、登山、摄影、写作、以及拍摄制作一些视频，喜欢微场景制作。
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <div id="myskill">
-                <h2 class="aboutskill">My Skill</h2>
-                <div class="skill-swiper-container">
-                    <div class="swiper-wrapper">
-                        <section class="swiper-slide skilllist">
-                            <div>
-                                <h2>Html</h2>
-                                <p>
-                                    <span  class="animate-active"   set-tran="scaleX(1.5)" set-during-time="1000"  set-func="ease" set-delay="0"></span>
-                                </p>
-                                <h3>
-                                    <em>9</em>
-                                    <em>0</em>
-                                    <em>%</em>
-                                </h3>
-                            </div>
-                            <div>
-                                <h2>Css</h2>
-                                <p>
-                                    <span   class="animate-active"   set-tran="scaleX(1.5)" set-during-time="1000"  set-func="ease" set-delay="0"></span>
-                                </p>
-                                <h3>
-                                    <em>9</em>
-                                    <em>0</em>
-                                    <em>%</em>
-                                </h3>
-                            </div>
-                            <div>
-                                <h2>JavaScript</h2>
-                                <p>
-                                    <span   class="animate-active"   set-tran="scaleX(1.3)" set-during-time="1000"  set-func="ease" set-delay="0"></span>
-                                </p>
-                                <h3>
-                                    <em>8</em>
-                                    <em>5</em>
-                                    <em>%</em>
-                                </h3>
-                            </div>
-                            <div>
-                                <h2>Jquery</h2>
-                                <p>
-                                    <span   class="animate-active"   set-tran="scaleX(1.3)" set-during-time="1000"  set-func="ease" set-delay="0"></span>
-                                </p>
-                                <h3>
-                                    <em>8</em>
-                                    <em>5</em>
-                                    <em>%</em>
-                                </h3>
-                            </div>
-                        </section>
-                        <section class="swiper-slide skilllist">
-                            <div>
-                                <h2>Ajax</h2>
-                                <p>
-                                    <span  class="animate-active"   set-tran="scaleX(1.3)" set-during-time="1000"  set-func="ease" set-delay="0"></span>
-                                </p>
-                                <h3>
-                                    <em>8</em>
-                                    <em>5</em>
-                                    <em>%</em>
-                                </h3>
-                            </div>
-                            <div>
-                                <h2>ANGULARJS</h2>
-                                <p>
-                                    <span   class="animate-active"   set-tran="scaleX(1.0)" set-during-time="1000"  set-func="ease" set-delay="0"></span>
-                                </p>
-                                <h3>
-                                    <em>7</em>
-                                    <em>0</em>
-                                    <em>%</em>
-                                </h3>
-                            </div>
-                            <div>
-                                <h2>BOOTSTRAP</h2>
-                                <p>
-                                    <span   class="animate-active"   set-tran="scaleX(1.2)" set-during-time="1000"  set-func="ease" set-delay="0"></span>
-                                </p>
-                                <h3>
-                                    <em>8</em>
-                                    <em>0</em>
-                                    <em>%</em>
-                                </h3>
-                            </div>
-                            <div>
-                                <h2>H5+C3</h2>
-                                <p>
-                                    <span   class="animate-active"   set-tran="scaleX(1.5)" set-during-time="1000"  set-func="ease" set-delay="0"></span>
-                                </p>
-                                <h3>
-                                    <em>9</em>
-                                    <em>0</em>
-                                    <em>%</em>
-                                </h3>
-                            </div>
-                        </section>
-                        <section class="swiper-slide skilllist">
-                            <div>
-                                <h2>Swiper</h2>
-                                <p>
-                                    <span  class="animate-active"   set-tran="scaleX(1.2)" set-during-time="1000"  set-func="ease" set-delay="0"></span>
-                                </p>
-                                <h3>
-                                    <em>8</em>
-                                    <em>0</em>
-                                    <em>%</em>
-                                </h3>
-                            </div>
-                            <div>
-                                <h2>Ps</h2>
-                                <p>
-                                    <span   class="animate-active"   set-tran="scaleX(1.2)" set-during-time="1000"  set-func="ease" set-delay="0"></span>
-                                </p>
-                                <h3>
-                                    <em>8</em>
-                                    <em>0</em>
-                                    <em>%</em>
-                                </h3>
-                            </div>
-                            <div>
-                                <h2>BootStrap</h2>
-                                <p>
-                                    <span   class="animate-active"   set-tran="scaleX(1.2)" set-during-time="1000"  set-func="ease" set-delay="0"></span>
-                                </p>
-                                <h3>
-                                    <em>8</em>
-                                    <em>0</em>
-                                    <em>%</em>
-                                </h3>
-                            </div>
-                            <div>
-                                <h2>iScroll+zepto+Hbulider</h2>
-                                <p>
-                                    <span   class="animate-active"   set-tran="scaleX(1.1)" set-during-time="1000"  set-func="ease" set-delay="0"></span>
-                                </p>
-                                <h3>
-                                    <em>7</em>
-                                    <em>0</em>
-                                    <em>%</em>
-                                </h3>
-                            </div>
-                        </section>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-
             </div>
-        </section>
-
-        <section class="swiper-slide out-slide2 out-slide">
-            <div class="canvas">
-                <a><img src="images/pic10.jpg" alt="二维码"></a>
-                <span>
-                    <em class="picok">确定</em>
-
-                </span>
+            <div class="welcome-text" style="opacity: 0;filter: alpha(opacity=0);">
+                <h2>Simple Design | Personal Portfolio</h2>
+                <h5>This is a mobile friendly layout with Bootstrap v3.3.1 framework. Maecenas eu ante at nunc posuere fringilla sit amet non dolor. Proin condimentum fermentum nunc.</h5>
             </div>
-            <header  class="headtitle">
-                <h1>
-                    H5 Demo
-                </h1>
-            </header>
-            <article>
-                <p>在节假日期间，会根据个人爱好和学过的知识，制作一些微场景，同时进行自我充电</p>
-            </article>
-            <section>
-                <div class="animate-active" set-tran="translateX(0%)" set-during-time="2500" set-animate="fadeIn 1500ms linear 0s 1" set-func="ease" set-delay="0">
-                    <a href="#">
-                        <em></em>
-                        <em></em>
-                        <i>当你老了</i>
-                        <i class="scan">预览</i>
-                        <img src="images/old.jpg" alt="h5demo">
-                    </a>
-                    <a href="#">
-                        <em></em>
-                        <em></em>
-                        <i>那些年</i>
-                        <i class="scan">预览</i>
-                        <img src="images/lastyear%20(4).jpg" alt="h5demo">
-                    </a>
-
-                    <a href="#">
-                        <em></em>
-                        <em></em>
-                        <i>幸福</i>
-                        <i class="scan">预览</i>
-                        <img src="images/happy6.jpg" alt="h5demo">
-                    </a>
-
-                </div>
-                <div class="animate-active" set-tran="translateX(0%)" set-during-time="1500" set-animate="fadeIn 1s linear 0s 1" set-func="ease" set-delay="0">
-                    <a href="#">
-                        <em></em>
-                        <em></em>
-                        <i>同学会</i>
-                        <i class="scan">预览</i>
-                        <img src="images/flower.jpg" alt="h5demo">
-                    </a>
-                    <a href="#">
-                        <em></em>
-                        <em></em>
-                        <i>个人简历</i>
-                        <i class="scan">预览</i>
-                        <img src="images/title.png" alt="h5demo">
-                    </a>
-                    <a href="#">
-                        <em></em>
-                        <em></em>
-                        <i>一棵树</i>
-                        <i class="scan">预览</i>
-                        <img src="images/tree3.jpg" alt="h5demo">
-                    </a>
-                </div>
-            </section>
-            <footer>
-                <p>以上场景页面均为兴趣原创，谢绝商业行为，欢迎浏览交流</p>
-            </footer>
-        </section>
-        <section class="swiper-slide out-slide3 out-slide">
-            <div class="window">
-                <div>
-                    <span>☺谢谢您的留言<br/>我将在最短的时间回复您！</span>
-                </div>
-                <p>
-                    <span class="nopro">确定</span>
-                </p>
-                <h2 class="noque">×</h2>
-            </div>
-            <header  class="headtitle">
-                <h1>
-                    PORTFOLIO
-                </h1>
-            </header>
-            <section class="case animate-active" set-tran="scale(1)" set-during-time="2500" set-animate="zoomIn 1500ms linear 0s 1" set-func="ease" set-delay="0">
-                <div class="left-case">
-                    <p>目前有四个线上项目。主要负责：根据原型图，利用Div+css，HTML5+CSS3完成页面结构搭建；使用javascript， zepto，iscroll，touch等技术实现页面的动态及交互效果；使用Ajax完成对数据的渲染；对程序进行代码优化，兼容调试；
-                    </p>
-                    <section>
-                        <div><img src="images/house.jpg" alt="project"></div>
-                        <div><img src="images/food.png" alt="project"></div>
-                        <div><img src="images/pic.png" alt="project"></div>
-                        <div><img src="images/thin.png" alt="project"></div>
-                    </section>
-                </div>
-                <div class="right-case">
-                    <div><input type="text" placeholder="Name" class="inner-mess"></div>
-                    <div><input type="text" placeholder="Email" class="inner-mess"></div>
-                    <div><textarea placeholder="Message" class="inner-mess"></textarea></div>
-                    <div><input type="button" value="send" class="submit"></div>
-                </div>
-            </section>
-            <footer id="footer">
-                <div class="animate-active" set-animate="bounce 1s linear 0s 1">
-                    <h2>TelePhone</h2>
-                    <p><span class="iconfont phone">:</span>18210589196</p>
-                </div>
-                <div  class="animate-active" set-animate="bounce 1s linear 1000ms 1">
-                    <h2>E-mail</h2>
-                    <p><span class="iconfont email">:</span>webheng@126.com</p>
-                </div>
-                <div  class="animate-active" set-animate="bounce 1s linear 2000ms 1">
-                    <h2>QQ</h2>
-                    <p><span class="iconfont qq">:</span>2021973232</p>
-                </div>
-            </footer>
-        </section>
-    </div>
-    <div class="swiper-scrollbar"></div>
-    <div id="navcontainer">
-        <div class="navlist" id="sidebarnav">
         </div>
-        <em>
-            导航
-        </em>
-    </div>
 
-</section>
-<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
-<script type="text/javascript" src="js/swiper-3.3.1.jquery.min.js"></script>
-<script type="text/javascript" src="js/swiper.animate1.0.2.min.js"></script>
-<script src="https://cdn1.lncld.net/static/js/av-min-1.2.1.js"></script>
-<script type="text/javascript" src="js/index.js"></script>
-</body>
+        <!-- MAIN CONTENT -->
+        <div class="main-content">
+            <div class="fluid-container">
+
+                <div class="content-wrapper">
+                
+                    <!-- ABOUT -->
+                    <div class="page-section" id="about">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="widget-title">Learn About Me</h4>
+                            <div class="about-image">
+                                <!--<img src="img/8.jpg" alt="about me">-->
+                                <div class="inner-swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide" style="background: url(img/bgq.jpg) no-repeat center;background-size: cover;"></div>
+                                        <div class="swiper-slide" style="background: url(img/bgf.jpg) no-repeat center;background-size: cover;"></div>
+                                        <div class="swiper-slide" style="background: url(img/bgg.jpg) no-repeat center;background-size: cover;"></div>
+                                        <div class="swiper-slide" style="background: url(img/bgh.jpg) no-repeat center;background-size: cover;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>我性格开朗、思维活跃；待人真诚、可靠，做事有责任心，条理性强；易与人相处，对工作充满热情,任劳任怨,勤奋好学,敢挑重担，具有很强的团队精神和协调能力。</p>
+                            <hr>
+                        </div>
+                    </div> <!-- #about -->
+                    </div>
+                    
+                    <!-- PROJECTS -->
+                    <div class="page-section" id="projects">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="widget-title">My Projects</h4>
+                            <p>目前有四个线上项目，还有一些自己制作的微场景。主要负责：根据原型图，利用Div+css，HTML5+CSS3完成页面结构搭建；使用javascript， zepto，iscroll，touch等技术实现页面的动态及交互效果；使用Ajax完成对数据的渲染；对程序进行代码优化，兼容调试；</p>
+                        </div>
+                    </div>
+                    <div class="row projects-holder">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="project-item">
+                                <img src="img/thin.gif" alt="">
+                                <div class="project-hover">
+                                    <div class="inside">
+                                        <h5><a href="#">减肥瘦身</a></h5>
+                                        <p>减肥瘦身是一款为兴趣而生的新一代资讯客户端。测试阶段，暂未上线。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="project-item">
+                                <img src="img/house.gif" alt="">
+                                <div class="project-hover">
+                                    <div class="inside">
+                                        <h5><a href="http://m.estay.com/">一呆公寓</a></h5>
+                                        <p>一呆公寓为旅游度假人士提供一种比酒店更舒适、更方便、更实惠的住宿选择</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="project-item">
+                                <img src="img/pic.png" alt="">
+                                <div class="project-hover">
+                                    <div class="inside">
+                                        <h5><a href="http://bj.studioartiz.com/">韩国匠艺</a></h5>
+                                        <p>韩国艺匠目前已经做到全国韩式婚纱摄影的佼佼者，致力于将韩式婚纱摄影的美感带给每位客户。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="project-item">
+                                <img src="img/food.gif" alt="">
+                                <div class="project-hover">
+                                    <div class="inside">
+                                        <h5><a href="http://www.xinshipu.com/">心食谱</a></h5>
+                                        <p>心食谱网站是一个提供给全球华人的食谱平台， 已上线。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="project-item">
+                                <img src="img/lastyear.jpg" alt="">
+                                <div class="project-hover"  style="background:url(img/play2.png) no-repeat center center;background-size: 90% 96%">
+                                    <div class="inside">
+                                        <h5><a  style="color:rgba(0,0,0,0)">Pellentesque porta ligula</a></h5>
+                                        <p style="color:rgba(0,0,0,0)">Quisque mattis sit amet dolor eu scelerisque. Vivamus bibendum massa et nisl tempus commodo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="project-item">
+                                <img src="img/cv.gif" alt="">
+                                <div class="project-hover"  style="background:url(img/play5.png) no-repeat center center;background-size: 96% 98%">
+                                    <div class="inside">
+                                        <h5><a  style="color:rgba(0,0,0,0)">Pellentesque porta ligula</a></h5>
+                                        <p style="color:rgba(0,0,0,0)">Quisque mattis sit amet dolor eu scelerisque. Vivamus bibendum massa et nisl tempus commodo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- .projects-holder -->
+                    </div>
+                    <hr>
+
+                    <!-- CONTACT -->
+                    <div class="page-section" id="contact">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="widget-title">PLACE TO TALK WITH ME</h4>
+                            <p class="myinfor">
+                                <span>Phone:18210589196</span>
+                                <span>QQ:2021973232</span>
+                                <span>Email:webheng@126.com</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <form action="#" method="post" class="contact-form">
+                            <fieldset class="col-md-4 col-sm-6">
+                                <input type="text" id="your-name" placeholder="Your Name...">
+                            </fieldset>
+                            <fieldset class="col-md-4 col-sm-6">
+                                <input type="email" id="email" placeholder="Your Email...">
+                            </fieldset>
+                            <fieldset class="col-md-4 col-sm-12">
+                                <input type="text" id="your-subject" placeholder="Subject...">
+                            </fieldset>
+                            <fieldset class="col-md-12 col-sm-12">
+                                <textarea name="message" id="message" cols="30" rows="6" placeholder="Leave your message..."></textarea>
+                            </fieldset>
+                            <fieldset class="col-md-12 col-sm-12">
+                                <input type="button" class="button big default submit" value="Send Message">
+                            </fieldset>
+                        </form>
+                    </div> <!-- .contact-form -->
+                    </div>
+                    <hr>
+
+                    <div class="row" id="footer">
+                        <div class="col-md-12 text-center">
+                            <p class="copyright-text">Copyright &copy; 2016 Name | Firefly <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">电子简历</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">我的网站</a></p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <script src="js/vendor/jquery-1.10.2.min.js"></script>
+        <script src="js/min/plugins.min.js"></script>
+        <script src="js/min/main.min.js"></script>
+        <script src="js/swipe/swiper-3.3.1.jquery.min.js"></script>
+        <script src="js/swipe/swiper.animate1.0.2.min.js"></script>
+        <script src="js/swipe/touch.js"></script>
+        <script src="https://cdn1.lncld.net/static/js/av-min-1.2.1.js"></script>
+        <script src="js/swipe/swipe.js"></script>
+    </body>
 </html>
