@@ -3,13 +3,16 @@
  */
 $(document).ready(function(){
     var mySwiper = new Swiper('.swiper-container', {
-        autoplay: 4300,//可选选项，自动滑动
+        autoplay: 4000,//可选选项，自动滑动
         pagination : '.swiper-pagination',
         loop : true,
-        speed:1600,
+        speed:1100,
         touchRatio :1,
         followFinger : true,
         shortSwipes : true,
+        paginationClickable :true,
+        preventClicks : true,
+        autoplayDisableOnInteraction : false,
         onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
             swiperAnimateCache(swiper); //隐藏动画元素
             swiperAnimate(swiper); //初始化完成开始动画
