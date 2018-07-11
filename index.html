@@ -3,274 +3,426 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+
     <head>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>张恒-web前端-个人网站</title>
+        <title>Grill Restaurant Website Template</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        
-        <link rel="stylesheet" href="css/normalize.css">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/font-awesome.css">
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/templatemo-style.css">
-        <link rel="stylesheet" href="css/swiper-3.3.1.min.css">
-        <link rel="stylesheet" href="css/animate.min.css">
-        <link rel="stylesheet" href="css/main.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <link rel="stylesheet" href="css/templatemo_style.css">
+        <link rel="stylesheet" href="css/templatemo_misc.css">
+        <link rel="stylesheet" href="css/flexslider.css">
+        <link rel="stylesheet" href="css/testimonails-slider.css">
+
+        <script src="js/vendor/modernizr-2.6.1-respond-1.1.0.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="#/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
-    
-        <div class="responsive-header visible-xs visible-sm">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="top-section">
-                            <div class="profile-image">
-                                <img src="img/profile.jpg" alt="Volton">
+
+            <header>
+                <!--<div id="top-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="home-account">
+                                    <a href="#">Home</a>
+                                    <a href="#">My account</a>
+                                </div>
                             </div>
-                            <div class="profile-content">
-                                <h3 class="profile-title"></h3>
-                                <p class="profile-description">张恒 前端工程师</p>
+                            <div class="col-md-6">
+                                <div class="cart-info">
+                                    <i class="fa fa-shopping-cart"></i>
+                                    (<a href="#">5 items</a>) in your cart (<a href="#">$45.80</a>)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+                <div id="main-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <div class="logo">
+                                    <a href="#"><img src="images/logo.png" title="Grill Template" alt="Grill Website Template" ></a>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="main-menu">
+                                    <ul>
+                                        <li><a href="index.html">首页</a></li>
+                                        <li><a href="scientificResearch.html">科研绘图</a></li>
+                                        <li><a href="products.html">样品测试</a></li>
+                                        <li><a href="dataPruduct.html">数据分析</a></li>
+                                        <li><a href="computed.html">计算模拟</a></li>
+                                        <li><a href="contact-us.html">联系我们</a></li>
+                                        <li><a href="about-us.html">关于我们</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="search-box">  
+                                    <form name="search_form" method="get" class="search_form">
+                                        <input id="search" type="text" />
+                                        <input type="submit" id="search-button" />
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="#" class="toggle-menu"><i class="fa fa-bars"></i></a>
-                <div class="main-navigation responsive-menu">
-                    <ul class="navigation">
-                        <li><a href="#top"><i class="fa fa-home"></i>Home</a></li>
-                        <li><a href="#about"><i class="fa fa-user"></i>About Me</a></li>
-                        <li><a href="#projects"><i class="fa fa-newspaper-o"></i>My Gallery</a></li>
-                        <li><a href="#contact"><i class="fa fa-envelope"></i>Contact Me</a></li>
-                    </ul>
+            </header>
+            
+
+            <div id="slider">
+                <div class="flexslider">
+                  <ul class="slides">
+                    <li>
+                        <div class="slider-caption">
+                            <h1>欢迎来到路漫学术！</h1>
+                            <p>路漫学术测试分析平台--
+                                <br><br>您的得力科研助手，为您提供完美的科研解决方案！
+                            </p>
+                            <a href="#">了解更多</a>
+                        </div>
+                      <img src="images/slide1.jpg" alt="" />
+                    </li>
+                    <li>
+                        <div class="slider-caption">
+                            <h1>欢迎来到路漫学术！</h1>
+                            <p>路漫学术测试分析平台--
+                                <br><br>您的得力科研助手，为您提供完美的科研解决方案！
+                            </p>
+                            <a href="#">了解更多</a>
+                        </div>
+                      <img src="images/slide2.jpg" alt="" />
+                    </li>
+                    <li>
+                        <div class="slider-caption">
+                            <h1>欢迎来到路漫学术！</h1>
+                            <p>路漫学术测试分析平台--
+                                <br><br>您的得力科研助手，为您提供完美的科研解决方案！
+                            </p>
+                            <a href="#">了解更多</a>
+                        </div>
+                      <img src="images/slide3.jpg" alt="" />
+                    </li>
+                  </ul>
                 </div>
             </div>
-        </div>
-		
-        <!-- SIDEBAR -->
-        <div class="sidebar-menu hidden-xs hidden-sm">
-            <div class="top-section">
-                <div class="profile-image">
-                    <img src="img/profile.jpg" alt="Volton">
-                </div>
-                <h3 class="profile-title">张恒</h3>
-                <p class="profile-description">Web前端工程师</p>
-            </div> <!-- top-section -->
-            <div class="main-navigation">
-                <ul class="navigation">
-                    <li><a href="#top"><i class="fa fa-globe"></i>Welcome</a></li>
-                    <li><a href="#about"><i class="fa fa-pencil"></i>About Me</a></li>
-                    <li><a href="#projects"><i class="fa fa-paperclip"></i>My Projects</a></li>
-                    <li><a href="#contact"><i class="fa fa-link"></i>Contact Me</a></li>
-                </ul>
-            </div> <!-- .main-navigation -->
-            <!--<div class="social-icons">
-                <ul>
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                </ul>
-            </div> --><!-- .social-icons -->
-        </div> <!-- .sidebar-menu -->
+            <div class="copyrights">Collect from <a href="#"  title="网站模板">网站模板</a></div>
 
-        <div class="banner-bg" id="top" style="background: none">
-            <!--<div class="banner-overlay"></div>-->
-            <div class="swiper-container banner-overlay"  style="background: none">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide" style="background:url(img/jobs.jpg) no-repeat 0 0;background-size: cover;">
-                        <div class="welcome-text my-text">
-                            <h2  class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.5s" swiper-animate-delay="0.1s">Steve Jobs | Says</h2>
-                            <h5  class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.5s" swiper-animate-delay="0.1s">Stay Hungry,Stay Foolish.IT是一个永无止境的学海，时刻用这句话来警醒自己！</h5>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" style="background:url(img/way.jpg) no-repeat 0 0;background-size: cover;">
-                        <div class="welcome-text my-text">
-                            <h2  class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.5s" swiper-animate-delay="0.1s">行 ！ 胜于言</h2>
-                            <h5  class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.5s" swiper-animate-delay="0.1s">Actions speak louder than words.纸上得来终觉浅，绝知此事要躬行！</h5>
-                        </div>
-                    </div>
-                    <div class="swiper-slide" style="background:url(img/montain.jpg) no-repeat 0 0;background-size: cover;">
-                        <div class="welcome-text my-text">
-                            <h2  class="ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.5s" swiper-animate-delay="0.1s">《阿甘正传》</h2>
-                            <h5  class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="1.5s" swiper-animate-delay="0.1s">Do one thing at a time ,and do well .用一颗单纯的心，做一件单纯的事！</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-            <div class="welcome-text" style="opacity: 0;filter: alpha(opacity=0);">
-                <h2>Simple Design | Personal Portfolio</h2>
-                <h5>This is a mobile friendly layout with Bootstrap v3.3.1 framework. Maecenas eu ante at nunc posuere fringilla sit amet non dolor. Proin condimentum fermentum nunc.</h5>
-            </div>
-        </div>
 
-        <!-- MAIN CONTENT -->
-        <div class="main-content">
-            <div class="fluid-container">
-
-                <div class="content-wrapper">
-                
-                    <!-- ABOUT -->
-                    <div class="page-section" id="about">
+            <div id="services">
+                <div class="container">
                     <div class="row">
                         <div class="col-md-12">
-                            <h4 class="widget-title">Learn About Me</h4>
-                            <div class="about-image">
-                                <!--<img src="img/8.jpg" alt="about me">-->
-                                <div class="inner-swiper-container">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide" style="background: url(img/bgq.jpg) no-repeat center;background-size: cover;"></div>
-                                        <div class="swiper-slide" style="background: url(img/bgf.jpg) no-repeat center;background-size: cover;"></div>
-                                        <div class="swiper-slide" style="background: url(img/bgg.jpg) no-repeat center;background-size: cover;"></div>
-                                        <div class="swiper-slide" style="background: url(img/bgh.jpg) no-repeat center;background-size: cover;"></div>
+                            <div class="heading-section">
+                                <h2>我们优势</h2>
+                                <img src="images/under-heading.png" alt="" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <div class="icon">
+                                    <i class="fa fa-pencil"></i>
+                                </div>
+                                <h4>优势一</h4>
+                                <p>这是我们的优势内容优势内容这是我们的优势内容优势内容这是我们的优势内容优势内容这是我们的优势内容优势内容这是我们的优势内容优势内容这是我们的优势内容优势内容这是我们的优势内容优势内容</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <div class="icon">
+                                    <i class="fa fa-bullhorn"></i>
+                                </div>
+                                <h4>优势二</h4>
+                                <p>这是我们的优势内容优势内容这是我们的优势内容优势内容这是我们的优势内容优势内容这是我们的优势内容优势内容这是我们的优势内容优势内容这是我们的优势内容优势内容这是我们的优势内容优势内容</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <div class="icon">
+                                    <i class="fa fa-bell"></i>
+                                </div>
+                                <h4>优势三</h4>
+                                <p>这是我们的优势内容优势内容这是我们的优势内容优势内容这是我们的优势内容优势内容这是我们的优势内容优势内容这是我们的优势内容优势内容这是我们的优势内容优势内容这是我们的优势内容优势内容</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <div class="icon">
+                                    <i class="fa fa-heart"></i>
+                                </div>
+                                <h4>优势四</h4>
+                                <p>这是我们的优势内容优势内容这是我们的优势内容优势内容这是我们的优势内容优势内容这是我们的优势内容优势内容这是我们的优势内容优势内容这是我们的优势内容优势内容这是我们的优势内容优势内容</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div id="latest-blog">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="heading-section">
+                                <h2>最新项目合作</h2>
+                                <img src="images/under-heading.png" alt="" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="blog-post">
+                                <div class="blog-thumb">
+                                    <img src="images/blogpost1.jpg" alt="" />
+                                </div>
+                                <div class="blog-content">
+                                    <div class="content-show">
+                                        <h4><a href="#">项目一</a></h4>
+                                        <span>2018.02.15</span>
+                                    </div>
+                                    <div class="content-hide">
+                                        <p>项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容</p>
                                     </div>
                                 </div>
                             </div>
-                            <p>我性格开朗、思维活跃；待人真诚、可靠，做事有责任心，条理性强；易与人相处，对工作充满热情,任劳任怨,勤奋好学,敢挑重担，具有很强的团队精神和协调能力。</p>
-                            <hr>
                         </div>
-                    </div> <!-- #about -->
+                        <div class="col-md-4 col-sm-6">
+                            <div class="blog-post">
+                                <div class="blog-thumb">
+                                    <img src="images/blogpost1.jpg" alt="" />
+                                </div>
+                                <div class="blog-content">
+                                    <div class="content-show">
+                                        <h4><a href="#">项目一</a></h4>
+                                        <span>2018.02.15</span>
+                                    </div>
+                                    <div class="content-hide">
+                                        <p>项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="blog-post">
+                                <div class="blog-thumb">
+                                    <img src="images/blogpost1.jpg" alt="" />
+                                </div>
+                                <div class="blog-content">
+                                    <div class="content-show">
+                                        <h4><a href="#">项目一</a></h4>
+                                        <span>2018.02.15</span>
+                                    </div>
+                                    <div class="content-hide">
+                                        <p>项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="blog-post">
+                                <div class="blog-thumb">
+                                    <img src="images/blogpost1.jpg" alt="" />
+                                </div>
+                                <div class="blog-content">
+                                    <div class="content-show">
+                                        <h4><a href="#">项目一</a></h4>
+                                        <span>2018.02.15</span>
+                                    </div>
+                                    <div class="content-hide">
+                                        <p>项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="blog-post">
+                                <div class="blog-thumb">
+                                    <img src="images/blogpost1.jpg" alt="" />
+                                </div>
+                                <div class="blog-content">
+                                    <div class="content-show">
+                                        <h4><a href="#">项目一</a></h4>
+                                        <span>2018.02.15</span>
+                                    </div>
+                                    <div class="content-hide">
+                                        <p>项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <div class="blog-post">
+                                <div class="blog-thumb">
+                                    <img src="images/blogpost1.jpg" alt="" />
+                                </div>
+                                <div class="blog-content">
+                                    <div class="content-show">
+                                        <h4><a href="#">项目一</a></h4>
+                                        <span>2018.02.15</span>
+                                    </div>
+                                    <div class="content-hide">
+                                        <p>项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容项目简介内容</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="testimonails">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="heading-section">
+                                <h2>用户反馈</h2>
+                                <img src="images/under-heading.png" alt="" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="testimonails-slider">
+                              <ul class="slides">
+                                <li>
+                                    <div class="testimonails-content">
+                                        <p>用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容</p>
+                                        <h6>反馈客户 - <a href="#">蔡俊辉</a></h6>
+                                    </div>
+                                </li>
+                                  <li>
+                                      <div class="testimonails-content">
+                                          <p>用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容</p>
+                                          <h6>反馈客户 - <a href="#">蔡俊辉</a></h6>
+                                      </div>
+                                  </li>
+                                  <li>
+                                      <div class="testimonails-content">
+                                          <p>用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容用户反馈内容</p>
+                                          <h6>反馈客户 - <a href="#">蔡俊辉</a></h6>
+                                      </div>
+                                  </li>
+                              </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+			<footer>
+                <div class="container">
+                    <div class="top-footer">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="subscribe-form">
+                                    <span>发消息给我们</span>
+                                    <form method="get" class="subscribeForm">
+                                        <input id="subscribe" type="text" />
+                                        <input type="submit" id="submitButton" />
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="social-bottom">
+                                    <span>关注我们:</span>
+                                    <ul>
+                                        <li><a href="#" class="fa fa-facebook"></a></li>
+                                        <li><a href="#" class="fa fa-twitter"></a></li>
+                                        <li><a href="#" class="fa fa-rss"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-footer">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="about">
+                                    <h4 class="footer-title">公司简介</h4>
+                                    <p>公司简介内容公司简介内容公司简介内容公司简介内容公司简介内容公司简介内容公司简介内容公司简介内容公司简介内容公司简介内容公司简介内容
+                                        <br><br>公司简介内容 <a rel="nofollow" href="#">公司简介内容</a> 公司简介内容公司简介内容公司简介内容公司简介内容公司简介内容公司简介内容公司简介内容</p>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="shop-list">
+                                    <h4 class="footer-title">友情链接</h4>
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i>友情链接一标题</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i>友情链接二标题</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i>友情链接三标题</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i>友情链接四标题</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i>友情链接五标题</a></li>
+                                        <li><a href="#"><i class="fa fa-angle-right"></i>友情链接六标题</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="recent-posts">
+                                    <h4 class="footer-title">近期项目</h4>
+                                    <div class="recent-post">
+                                        <div class="recent-post-thumb">
+                                            <img src="images/recent-post1.jpg" alt="">
+                                        </div>
+                                        <div class="recent-post-info">
+                                            <h6><a href="#">近期项目标题</a></h6>
+                                            <span>24/12/2084</span>
+                                        </div>
+                                    </div>
+                                    <div class="recent-post">
+                                        <div class="recent-post-thumb">
+                                            <img src="images/recent-post2.jpg" alt="">
+                                        </div>
+                                        <div class="recent-post-info">
+                                            <h6><a href="#">近期项目标题</a></h6>
+                                            <span>18/12/2084</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="more-info">
+                                    <h4 class="footer-title">关于我们</h4>
+                                    <p>关于我们的内容关于我们的内容关于我们的内容关于我们的内容关于我们的内容关于我们的内容关于我们的内容关于我们的内容关于我们的内容关于我们的内容关于我们的内容</p>
+                                    <ul>
+                                        <li><i class="fa fa-phone"></i>010-020-0340</li>
+                                        <li><i class="fa fa-globe"></i>这是我们公司的地址公司地址</li>
+                                        <li><i class="fa fa-envelope"></i><a href="#">info@company.com</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-footer">
+                        <p>Copyright © 2084 <a href="#">Your Company Name</a> Collect from <a href="#" title="路漫学术
+" target="_blank">路漫学术
+                        </a> - More Templates <a href="#" target="_blank" title="路漫学术
+">路漫学术
+                        </a></p>
                     </div>
                     
-                    <!-- PROJECTS -->
-                    <div class="page-section" id="projects">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4 class="widget-title">My Projects</h4>
-                            <p>目前有四个线上项目，还有一些自己制作的微场景。主要负责：根据原型图，利用Div+css，HTML5+CSS3完成页面结构搭建；使用javascript， zepto，iscroll，touch等技术实现页面的动态及交互效果；使用Ajax完成对数据的渲染；对程序进行代码优化，兼容调试；</p>
-                        </div>
-                    </div>
-                    <div class="row projects-holder">
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="img/thin.gif" alt="">
-                                <div class="project-hover">
-                                    <div class="inside">
-                                        <h5><a href="#">减肥瘦身</a></h5>
-                                        <p>减肥瘦身是一款为兴趣而生的新一代资讯客户端。测试阶段，暂未上线。</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="img/house.gif" alt="">
-                                <div class="project-hover">
-                                    <div class="inside">
-                                        <h5><a href="http://m.estay.com/">一呆公寓</a></h5>
-                                        <p>一呆公寓为旅游度假人士提供一种比酒店更舒适、更方便、更实惠的住宿选择</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="img/pic.png" alt="">
-                                <div class="project-hover">
-                                    <div class="inside">
-                                        <h5><a href="http://bj.studioartiz.com/">韩国匠艺</a></h5>
-                                        <p>韩国艺匠目前已经做到全国韩式婚纱摄影的佼佼者，致力于将韩式婚纱摄影的美感带给每位客户。</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="img/food.gif" alt="">
-                                <div class="project-hover">
-                                    <div class="inside">
-                                        <h5><a href="http://www.xinshipu.com/">心食谱</a></h5>
-                                        <p>心食谱网站是一个提供给全球华人的食谱平台， 已上线。</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="img/lastyear.jpg" alt="">
-                                <div class="project-hover"  style="background:url(img/play2.png) no-repeat center center;background-size: 90% 96%">
-                                    <div class="inside">
-                                        <h5><a  style="color:rgba(0,0,0,0)">Pellentesque porta ligula</a></h5>
-                                        <p style="color:rgba(0,0,0,0)">Quisque mattis sit amet dolor eu scelerisque. Vivamus bibendum massa et nisl tempus commodo.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="img/cv.gif" alt="">
-                                <div class="project-hover"  style="background:url(img/play5.png) no-repeat center center;background-size: 96% 98%">
-                                    <div class="inside">
-                                        <h5><a  style="color:rgba(0,0,0,0)">Pellentesque porta ligula</a></h5>
-                                        <p style="color:rgba(0,0,0,0)">Quisque mattis sit amet dolor eu scelerisque. Vivamus bibendum massa et nisl tempus commodo.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> <!-- .projects-holder -->
-                    </div>
-                    <hr>
-
-                    <!-- CONTACT -->
-                    <div class="page-section" id="contact">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4 class="widget-title">PLACE TO TALK WITH ME</h4>
-                            <p class="myinfor">
-                                <span>Phone:18210589196</span>
-                                <span>QQ:2021973232</span>
-                                <span>Email:webheng@126.com</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <form action="#" method="post" class="contact-form">
-                            <fieldset class="col-md-4 col-sm-6">
-                                <input type="text" id="your-name" placeholder="Your Name...">
-                            </fieldset>
-                            <fieldset class="col-md-4 col-sm-6">
-                                <input type="email" id="email" placeholder="Your Email...">
-                            </fieldset>
-                            <fieldset class="col-md-4 col-sm-12">
-                                <input type="text" id="your-subject" placeholder="Subject...">
-                            </fieldset>
-                            <fieldset class="col-md-12 col-sm-12">
-                                <textarea name="message" id="message" cols="30" rows="6" placeholder="Leave your message..."></textarea>
-                            </fieldset>
-                            <fieldset class="col-md-12 col-sm-12">
-                                <input type="button" class="button big default submit" value="Send Message">
-                            </fieldset>
-                        </form>
-                    </div> <!-- .contact-form -->
-                    </div>
-                    <hr>
-
-                    <div class="row" id="footer">
-                        <div class="col-md-12 text-center">
-                            <p class="copyright-text">Copyright &copy; 2016 Name | Firefly <a href="http://fireflycv.duapp.com/" target="_blank" title="手机端简历">电子简历</a> - Collect from <a href="http://wishedy.duapp.com/" title="我的个人网站" target="_blank">我的网站</a></p>
-                        </div>
-                    </div>
-
                 </div>
+            </footer>
 
-            </div>
-        </div>
+    
+        <script src="js/vendor/jquery-1.11.0.min.js"></script>
+        <script src="js/vendor/jquery.gmap3.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
 
-        <script src="js/vendor/jquery-1.10.2.min.js"></script>
-        <script src="js/min/plugins.min.js"></script>
-        <script src="js/min/main.min.js"></script>
-        <script src="js/swipe/swiper-3.3.1.jquery.min.js"></script>
-        <script src="js/swipe/swiper.animate1.0.2.min.js"></script>
-        <script src="js/swipe/touch.js"></script>
-        <script src="https://cdn1.lncld.net/static/js/av-min-1.2.1.js"></script>
-
-        <script src="js/swipe/swipe.js"></script>
     </body>
 </html>
